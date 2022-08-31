@@ -1,0 +1,100 @@
+@media (min-width: 680px) {
+  .header {
+    a {
+      .logo {
+        height: 7rem;
+      }
+    }
+  }
+
+  .h1h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  /*Portadas*/
+  .contenedorPortadas .contTxt .titulo {
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+/*PANTALLAS*/
+@media (min-width: 1024px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    a {
+      .logo {
+        height: 10rem;
+      }
+    }
+    ul {
+      li:hover {
+        color: #b9baa3;
+        font-weight: bold;
+      }
+    }
+  }
+  .h1h2 {
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  .anuncios {
+    font-size: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+  }
+
+  /*Portadas*/
+
+  .contenedorPortadas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .contImg {
+      a {
+        img {
+          width: 45rem;
+          border-radius: 15px;
+          margin: 15px;
+        }
+      }
+    }
+    .contTxt {
+      a:hover {
+        color: #b9baa3;
+        font-weight: bold;
+      }
+    }
+  }
+
+  /*grilla*/
+
+  .card {
+    width: 25rem;
+    margin: 15px;
+    .card-body {
+      h5:hover {
+        color: #b9baa3;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 1293px) {
+  .contenedorPortadas {
+    .contImg {
+      a {
+        img {
+            width: 35rem;
+        }
+      }
+    }
+  }
+}
