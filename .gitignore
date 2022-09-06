@@ -1,2 +1,4 @@
 node_modules/
-*.json
+package-lock.json
+backup.css
+package.json
