@@ -1,0 +1,17 @@
+/* talles */
+.mainTalles {
+  &__talles {
+    @include flexible (flex, column);
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+  }
+  &__contTalles {
+    margin: 5%;
+    @include flexible (flex, column);
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+}

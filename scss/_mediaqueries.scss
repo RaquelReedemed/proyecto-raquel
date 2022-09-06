@@ -16,6 +16,17 @@
     height: 60px;
     font-size: 25px;
   }
+  .footer {
+    @include flexible (flex, row);
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /*talles*/
+  .mainTalles{
+    &contTalles{
+      font-size: 20px;
+    }
+  }
 }
 
 /*PANTALLAS*/
@@ -31,7 +42,7 @@
     }
     ul {
       li:hover {
-        color: #b9baa3;
+        color: $color-grisC;
         font-weight: bold;
       }
     }
@@ -44,8 +55,7 @@
   .anuncios {
     font-size: 20px;
     padding: 30px;
-    display: flex;
-    flex-direction: row;
+    @include flexible (flex, row);
     justify-content: space-between;
     margin-top: 2px;
   }
@@ -54,8 +64,6 @@
 
   .contenedorPortadas {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     .contImg {
       a {
         img {
@@ -67,7 +75,7 @@
     }
     .contTxt {
       a:hover {
-        color: #b9baa3;
+        color: $color-grisC;
         font-weight: bold;
       }
     }
@@ -80,11 +88,47 @@
     margin: 15px;
     .card-body {
       h5:hover {
-        color: #b9baa3;
+        color: $color-grisC;
         font-weight: bold;
       }
     }
   }
+
+/*PANTALLAS*/
+  .mainCont{
+    @include flexible (flex, row-reverse);
+    align-items: center;
+    justify-content: space-evenly;
+    &__contacto{
+      display: flex;
+      padding-right: 28px;
+    }
+    &__fondoGris{
+      background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
+    }
+    &__ul{
+      @include flexible (flex, column);
+      h3{
+        color: $color-grisC;
+        text-align: center; 
+      }
+      li{
+        list-style-type: none;
+        background-color: whitesmoke
+      }
+      img{
+        width: 2rem;
+      }
+
+    }
+  }
+  /*talles*/
+.mainTalles{
+  &__contTalles{
+    font-size: 20px;
+  }
+}
+
 }
 
 @media (min-width: 1293px) {
@@ -92,9 +136,15 @@
     .contImg {
       a {
         img {
-            width: 35rem;
+          width: 35rem;
         }
       }
+    }
+  }
+  /*talles*/
+  .mainTalles{
+    &__contTalles{
+      font-size: 25px;
     }
   }
 }

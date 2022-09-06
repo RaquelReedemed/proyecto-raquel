@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--estilos copiados de la pagina animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--linkeo de css CDN BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--estilos propio-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shorcut icon" href="../img/logo.png" />
+    <!--keywords-->
+    <meta name="keywords" content="contactanos, datos, WhatsApp, bebes"/>
+    <!--descripcion-->
+    <meta name="descripcion" content="Atencion personalizada, llamanos o escribenos">
+    <title>Anfer | Contactanos</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+
+                <!--logo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../img/logo.png" alt="logo" /></a>
+
+                <!--menu hamburguesa-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!--menu-->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contactanos.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Catálogo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../paginas/remeras.html">Remeras</a></li>
+                                <li><a class="dropdown-item" href="../paginas/tazas.html">Tazas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../paginas/talles.html">Talles</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <!--barra buscadora-->
+                    <form class="d-flex buscador" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="h1h2">Sigamos Conectados!!!</h1>
+
+    <main class="mainCont">
+
+        <!--formulario-->
+        <section class="card mainCont__formCont mainCont__fondoGris">
+            <form action="#" method="get" class="d-flex flex-column flex-wrap align-items-center">
+
+
+                <div class="mb-3 w-50 d-flex flex-row flex-wrap justify-content-around">
+                    <label for="nombre y apellido" class="form-label mainCont__label">Nombre y apellido</label>
+                    <input type="text" class="form-control" placeholder="Escribe tu nombre y apellido">
+                </div>
+                <div class="mb-3 w-50 d-flex flex-row flex-wrap justify-content-around">
+                    <label for="correo" class="form-label mainCont__label">Correo electronico</label>
+                    <input type="email" class="form-control" placeholder="ej: tunombre@email.com">
+                </div>
+                <div class="mb-3 w-50 d-flex flex-row flex-wrap justify-content-around">
+                    <label for="numero" class="form-label mainCont__label">Numero tefefonico</label>
+                    <input type="number" class="form-control" placeholder="ej: 0054-">
+                </div>
+                <div class="mainCont__divComent">
+                    <p class=" d-flex flex-row flex-wrap justify-content-around">Comentario</p>
+                    <textarea class="coment" name="comentario" placeholder="opcional" maxlength="300" cols="30"
+                        rows="10"></textarea>
+                </div>
+                <br>
+                <div class="mainCont__button">
+                    <button type="button" class="btn btn-light">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card mainCont__contacto mainCont__fondoGris">
+            <ul class="mainCont__ul">
+                <h3 class="titForm">Contacto</h3>
+                <li> <img src="../img/logoTelf.png" alt="tlf"> Telefono: 11-33351276</li>
+                <li> <img src="../img/logoCorreo.png" alt="mail"> empresa@gmail.com</li>
+                <li> <img src="../img/logoInstBN.png" alt="instagram">www.Instagram.com</li>
+                <li> <img src="../img/logoDireccion.png" alt="direccion"> Buenos Aires,Argentina</li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!--footer-->
+
+    <footer class="footer">
+
+        <div class="anuncioRedes">
+            <h3 class="txtAnunRedes"> Contactanos a travez de los siguientes medios:</h3>
+        </div>
+
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/" target="_blank">
+                    <img class="imgRedes" src="https://res.cloudinary.com/da5fzpyjp/image/upload/v1662308771/Proyecto%20Desarrollo%20Web/logo-instagram1.png" alt="Instagram"></a> </li>
+            <li> <a href="https://www.mercadolibre.com.ar/" target="_blank">
+                    <img class="imgRedes" src="https://res.cloudinary.com/da5fzpyjp/image/upload/v1662308773/Proyecto%20Desarrollo%20Web/logo-mercado_libre1.png" alt="MercadoLibre"></a></li>
+            <li><img class="imgRedes" src="https://res.cloudinary.com/da5fzpyjp/image/upload/v1662308771/Proyecto%20Desarrollo%20Web/logoGmail1.png" alt="Gmail"></li>
+        </ul>
+
+        <!--Mapa insertado-->
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.160209054275!2d-58.410841!3d-34.6031487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1658454182087!5m2!1ses-419!2sar"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--Derechos de autor-->
+
+        <p class="pie">Todos los derechos reservados por Raquel Reedemed &copy;</p>
+
+    </footer>
+
+
+
+        <!--js con BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+        <!--WOW-->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+
+</body>

@@ -182,6 +182,62 @@ font-family: 'PT Sans', sans-serif; */
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  /*formulario*/
+
+.mainContactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .formContacto {
+  padding-top: 7px;
+}
+
+main .form-label {
+  color: #d6d5c9;
+}
+
+main .divComent p {
+  color: #d6d5c9;
+}
+
+main .contacto {
+  display: none;
+}
+
+main .listUlCont img {
+  width: 2rem;
+}
+
+main .listUlCont li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.fondoClaro {
+  background-color: whitesmoke;
+}
+
+/* talles */
+.talles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+.contTalles {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
   
   
 
@@ -266,6 +322,11 @@ footer {
    .contenedorPortadas .titulo {
       font-size: 25px;
     }
+    /*talles*/
+
+ .contTalles {
+  font-size: 20px;
+}
 
 }
 
@@ -347,6 +408,56 @@ footer {
     left: 95%;
   }
 
+   /*talles*/
+
+.contTalles {
+  font-size: 25px;
+}
+
+
+
+/*contactanos*/
+
+main .contacto {
+  display: flex;
+}
+
+.mainContactanos {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .listUlCont {
+  display: flex;
+  flex-direction: column;
+}
+
+main .listUlCont img {
+  width: 2rem;
+}
+
+main .listUlCont li {
+  list-style-type: none;
+}
+
+main .listUlCont h3 {
+  color: #d6d5c9;
+  text-align: center;
+}
+
+.mainContactanos .contacto {
+  padding-right: 28px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 }
 @media (min-width:1293px) {
 
@@ -355,3 +466,4 @@ footer {
       }    
 
 }
+

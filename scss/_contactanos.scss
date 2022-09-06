@@ -1,0 +1,24 @@
+/*formulario*/
+
+.mainCont {
+  @include flexible (flex, column);
+  align-items: center;
+  &__formCont {
+    padding-top: 7px;
+  }
+  &__fondoGris {
+    background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
+  }
+  &__label {
+    color: $color-grisC;
+  }
+  &__divComent p {
+    color: $color-grisC;
+  }
+  &__contacto {
+    display: none;
+  }
+  &__button {
+    padding-bottom: 5px;
+  }
+}

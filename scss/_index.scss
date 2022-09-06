@@ -9,10 +9,11 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240, 240, 240, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
   .nav-link {
-    color: hsl(55, 14%, 81%);
+    color: $color-grisC;
   }
+  
   input:hover {
-    background-color: #e6dede;
+    background-color: $color-grisO;
   }
 }
 
@@ -43,17 +44,14 @@ main {
 }
 
 .anuncios {
-  display: flex;
   font-size: 15px;
   background-color: $color-grisC;
   margin-top: 2px;
-  flex-direction: column-reverse;
-  padding: 15px;
+  @include flexible (flex, column-reverse);
 
   .texto {
-    display: flex;
+    @include flexible (flex, column);
     align-items: center;
-    flex-direction: column;
     margin: 10px;
     background-color: whitesmoke;
   }
@@ -61,9 +59,8 @@ main {
 /*Portadas*/
 
 .contenedorPortadas {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  @include flexible (flex, column-reverse);
+  @extend %elemCentrados;
   background-image: linear-gradient(129deg, #242323, grey);
   flex-wrap: wrap;
   .contImg {
@@ -74,6 +71,9 @@ main {
       img {
         width: 80vw;
         border-radius: 15px;
+        &:hover{
+          @extend %transImgCorta;
+        }
       }
     }
   }
@@ -93,9 +93,9 @@ main {
         height: 55px;
         border-radius: 15px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %elemCentrados;
         margin: 5px;
+        font-family: titulos;
       }
   }
 }
@@ -108,9 +108,7 @@ main {
   justify-content: space-evenly;
   .grilla {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
+    @extend %elemCentrados;
     width: 100%;
     .fondoGris {
       background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
@@ -123,8 +121,7 @@ main {
       .imgGrilla {
         margin-top: 5px;
         &:hover {
-          transform: scale(1.1);
-          transition: 0.3s;
+          @extend %transImgCorta;
         }
       }
       .card-body {
@@ -141,8 +138,7 @@ main {
 /*Footer*/
 
 .footer {
-  display: flex;
-  flex-direction: column;
+  @include flexible (flex, column);
   align-items: center;
   .txtAnunRedes {
     color: $color-grisC;
