@@ -1,0 +1,13 @@
+1- Agregue etiquetas meta keywords en todos los html:
+index: remeras, tazas, moda, sublimado, perzonalizados, algodon;
+remeras: remeras, serigrafiadas, variedad, algodon;
+tazas: tazas, personajes, ceramica, color;
+contactanos: contactanos, datos, WhatsApp;
+talles: talles, adultos, bebes, medidas;
+
+2- Agregue etiquetas meta descripcion en todos los html:
+index: Anfer emprendimiento pensado en la moda citadina pensado para apagar la sed de tu estilo;
+remeras: Remeras personalizadas de tu mejor version. Compra online y recibe donde quieras;
+tazas: tenemos las tazas de tus personajes favoritos. Compra online y recibe donde quieras;
+contactanos: Atencion personalizada, llamanos o escribenos;
+talles: Tabla de talles hechas con amor y dedicacion, llamanos o escribenos;
