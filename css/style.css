@@ -162,6 +162,28 @@ main .carousel-control-prev-icon {
   width: 60%;
 }
 
+/*Enlace Absoluto*/
+.enlaceAbs {
+  text-align: center;
+  margin: 7px;
+  width: 100%;
+}
+.enlaceAbs a {
+  text-decoration: none;
+  color: #0a100d;
+}
+
+/*Whatsapp*/
+.wapp {
+  display: inline-block;
+  position: fixed;
+  top: 400px;
+  left: 90%;
+}
+.wapp img {
+  width: 30px;
+}
+
 /*Footer*/
 .footer {
   display: flex;
@@ -345,6 +367,9 @@ main .carousel-control-prev-icon {
   /*talles*/
   .mainTalles__contTalles {
     font-size: 20px;
+  }
+  .wapp {
+    left: 95%;
   }
 }
 @media (min-width: 1293px) {
