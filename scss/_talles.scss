@@ -1,17 +1,45 @@
-/* talles */
-.mainTalles {
-  &__talles {
-    @include flexible (flex, column);
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    flex-wrap: wrap;
-  }
-  &__contTalles {
-    margin: 5%;
-    @include flexible (flex, column);
-    align-items: center;
+.breadcrumbTalles {
+  margin-top: 5px;
+}
+
+.divDescTalles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  p {
+    max-width: 800px;
     text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.mainTalles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__talles {
+    padding-bottom: 5%;
+  }
+
+  &__contTalles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     background-color: whitesmoke;
+    margin: 1rem;
+  }
+
+  thead {
+    background-color: $color-grisO;
+    border-bottom: solid 3px $color-blackC;
+  }
+
+  th,
+  td {
+    padding: 2px;
+    text-align: center;
   }
 }

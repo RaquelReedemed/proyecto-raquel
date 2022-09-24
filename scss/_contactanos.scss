@@ -1,7 +1,17 @@
 /*formulario*/
+.breadcrumb {
+  li
+  a {
+    text-decoration: none;
+    color: #d8a60f;
+    margin-left: 5px;
+  }
+}
+
+
 
 .mainCont {
-  @include flexible (flex, column);
+  @include flexible(flex, column);
   align-items: center;
   &__formCont {
     padding-top: 7px;

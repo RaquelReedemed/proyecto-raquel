@@ -11,20 +11,37 @@
     font-size: 20px;
     padding: 20px;
   }
+
   /*Portadas*/
   .contenedorPortadas .contTxt .titulo {
     height: 60px;
     font-size: 25px;
   }
   .footer {
-    @include flexible (flex, row);
+    @include flexible(flex, row);
     flex-wrap: wrap;
     justify-content: space-around;
   }
   /*talles*/
-  .mainTalles{
-    &contTalles{
+  .divDescTalles {
+    align-items: center;
+    p {
+      font-size: 15px;
+    }
+    ol {
+      display: flex;
+    }
+  }
+
+  .mainTalles {
+    flex-direction: column-reverse;
+    &__contTalles {
       font-size: 20px;
+      padding-top: 10px;
+    }
+    th,
+    td {
+      padding: 10px;
     }
   }
 }
@@ -55,7 +72,7 @@
   .anuncios {
     font-size: 20px;
     padding: 30px;
-    @include flexible (flex, row);
+    @include flexible(flex, row);
     justify-content: space-between;
     margin-top: 2px;
   }
@@ -94,45 +111,69 @@
     }
   }
 
-/*PANTALLAS*/
-  .mainCont{
-    @include flexible (flex, row-reverse);
+  .mainCont {
+    @include flexible(flex, row-reverse);
     align-items: center;
     justify-content: space-evenly;
-    &__contacto{
+    &__contacto {
       display: flex;
       padding-right: 28px;
     }
-    &__fondoGris{
+    &__fondoGris {
       background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
     }
-    &__ul{
-      @include flexible (flex, column);
-      h3{
+    &__ul {
+      @include flexible(flex, column);
+      h3 {
         color: $color-grisC;
-        text-align: center; 
+        text-align: center;
       }
-      li{
+      li {
         list-style-type: none;
-        background-color: whitesmoke
+        background-color: whitesmoke;
       }
-      img{
+      img {
         width: 2rem;
       }
-
     }
   }
   /*talles*/
-.mainTalles{
-  &__contTalles{
-    font-size: 20px;
+
+  .divDescTalles {
+    padding-bottom: 10px;
+    p {
+      font-size: 18px;
+    }
   }
-}
+  /*breadcrumb*/
+  .breadcrumb {
+    top: 32%;
+    left: 0;
+  }
 
-.wapp{
-  left: 95%;
-}
+  /*
+  .breadcrumbTalles {
+    top: 45%;
+    left: 10px;
+  }
+  */
+  .mainTalles {
+    flex-direction: column-reverse;
+    &__contTalles {
+      font-size: 22px;
+      h2 {
+        margin-top: 8px;
+      }
+    }
+    th,
+    td {
+      padding: 25px;
+    }
+  }
 
+  .wapp {
+    left: 95%;
+  }
 }
 
 @media (min-width: 1293px) {
@@ -146,9 +187,25 @@
     }
   }
   /*talles*/
-  .mainTalles{
-    &__contTalles{
-      font-size: 25px;
+  .mainTalles {
+    flex-direction: column-reverse;
+    &__contTalles {
+      font-size: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      h2 {
+        margin-top: 10px;
+      }
     }
+    th,
+    td {
+      padding: 30px;
+    }
+  }
+
+  .breadcrumbTalles {
+    position: absolute;
+    top: 50%;
+    left: 0;
   }
 }
