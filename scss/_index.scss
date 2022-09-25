@@ -124,6 +124,7 @@ main {
       position: static;
       .imgGrilla {
         margin-top: 5px;
+        border-radius: 8px;
         &:hover {
           @extend %transImgCorta;
         }

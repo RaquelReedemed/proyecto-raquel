@@ -156,6 +156,7 @@ main .carousel-item {
 }
 .container-Rq .grilla .card .imgGrilla {
   margin-top: 5px;
+  border-radius: 8px;
 }
 .container-Rq .grilla .card p {
   color: #D6D5C9;
