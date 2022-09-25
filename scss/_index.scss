@@ -58,6 +58,9 @@ main {
     align-items: center;
     margin: 10px;
     background-color: whitesmoke;
+    h3{
+      margin-top: 10px;
+    }
   }
 }
 /*Portadas*/
@@ -70,7 +73,6 @@ main {
   .contImg {
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
     a {
       img {
         width: 80vw;
@@ -86,7 +88,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
     a {
       text-decoration: none;
       color: $color-grisC;
@@ -149,6 +150,13 @@ main {
   margin: 0px;
   padding: 0;
   width: 100%;
+  .ButtEnlaceAbs{
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 5px;
+    background-color: $color-grisC;
+  }
   a{
     text-decoration: none;
     color: #0a100d;

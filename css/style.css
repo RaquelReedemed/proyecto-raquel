@@ -97,6 +97,9 @@ main .carousel-item {
   margin: 10px;
   background-color: whitesmoke;
 }
+.anuncios .texto h3 {
+  margin-top: 10px;
+}
 
 /*Portadas*/
 .contenedorPortadas {
@@ -108,7 +111,6 @@ main .carousel-item {
 .contenedorPortadas .contImg {
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
 }
 .contenedorPortadas .contImg a img {
   width: 80vw;
@@ -119,7 +121,6 @@ main .carousel-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
 }
 .contenedorPortadas .contTxt a {
   text-decoration: none;
@@ -175,6 +176,13 @@ main .carousel-item {
   margin: 0px;
   padding: 0;
   width: 100%;
+}
+.enlaceAbs .ButtEnlaceAbs {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  margin-bottom: 5px;
+  background-color: #D6D5C9;
 }
 .enlaceAbs a {
   text-decoration: none;
@@ -242,6 +250,7 @@ main .carousel-item {
 }
 .mainCont__formCont {
   padding-top: 7px;
+  margin-bottom: 7px;
 }
 .mainCont__fondoGris {
   background-image: linear-gradient(to bottom, #313131 0%, #222222 100%);
@@ -298,7 +307,7 @@ main .carousel-item {
 }
 .mainTalles th,
 .mainTalles td {
-  padding: 2px;
+  padding: 6.5px;
   text-align: center;
 }
 
