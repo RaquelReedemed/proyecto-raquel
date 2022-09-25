@@ -360,6 +360,10 @@ main .carousel-item {
     top: 0;
     z-index: 1;
   }
+  .header a {
+    font-size: 20px;
+    margin-left: 60px;
+  }
   .header a .logo {
     height: 10rem;
   }
@@ -458,6 +462,10 @@ main .carousel-item {
   }
 }
 @media (min-width: 1293px) {
+  .header a {
+    font-size: 25px;
+    margin-left: 80px;
+  }
   .contenedorPortadas .contImg a img {
     width: 35rem;
   }

@@ -53,6 +53,8 @@
     top: 0;
     z-index: 1;
     a {
+      font-size: 20px;
+      margin-left: 60px;
       .logo {
         height: 10rem;
       }
@@ -171,6 +173,13 @@
 }
 
 @media (min-width: 1293px) {
+
+  .header {
+    a {
+      font-size: 25px;
+      margin-left: 80px;
+    }
+  }
   .contenedorPortadas {
     .contImg {
       a {
