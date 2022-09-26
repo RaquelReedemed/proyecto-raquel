@@ -174,17 +174,11 @@ main .carousel-item {
   margin: 0px;
   padding: 0;
   width: 100%;
-}
-.enlaceAbs .ButtEnlaceAbs {
-  border-radius: 5px;
-  height: 30px;
-  width: 100px;
-  margin-bottom: 5px;
-  background-color: #D6D5C9;
+  background-image: linear-gradient(#3f3e3e, #3a3939);
 }
 .enlaceAbs a {
   text-decoration: none;
-  color: #0a100d;
+  color: #D6D5C9;
 }
 
 /*Whatsapp*/

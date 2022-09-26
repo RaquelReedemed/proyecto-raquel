@@ -148,16 +148,11 @@ main {
   margin: 0px;
   padding: 0;
   width: 100%;
-  .ButtEnlaceAbs {
-    border-radius: 5px;
-    height: 30px;
-    width: 100px;
-    margin-bottom: 5px;
-    background-color: $color-grisC;
-  }
+  background-image: linear-gradient(#3f3e3e, #3a3939);
+  
   a {
     text-decoration: none;
-    color: #0a100d;
+    color: #D6D5C9;
   }
 }
 
