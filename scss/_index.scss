@@ -11,7 +11,7 @@
   .nav-link {
     color: $color-grisC;
   }
-  
+
   input:hover {
     background-color: $color-grisO;
   }
@@ -29,10 +29,9 @@ main {
   .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E7D40A' %3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
   }
-  .carousel-item{
+  .carousel-item {
     overflow: hidden;
   }
-
 }
 
 /*Anuncios*/
@@ -51,14 +50,14 @@ main {
   font-size: 15px;
   background-color: $color-grisC;
   margin-top: 2px;
-  @include flexible (flex, column-reverse);
+  @include flexible(flex, column-reverse);
 
   .texto {
-    @include flexible (flex, column);
+    @include flexible(flex, column);
     align-items: center;
     margin: 10px;
     background-color: whitesmoke;
-    h3{
+    h3 {
       margin-top: 10px;
     }
   }
@@ -66,7 +65,7 @@ main {
 /*Portadas*/
 
 .contenedorPortadas {
-  @include flexible (flex, column-reverse);
+  @include flexible(flex, column-reverse);
   @extend %elemCentrados;
   flex-wrap: wrap;
   .contImg {
@@ -76,7 +75,7 @@ main {
       img {
         width: 80vw;
         border-radius: 15px;
-        &:hover{
+        &:hover {
           @extend %transImgCorta;
         }
       }
@@ -92,15 +91,15 @@ main {
       color: $color-grisC;
     }
     .titulo {
-        background-color: $color-blackC;
-        width: 20rem;
-        height: 55px;
-        border-radius: 15px;
-        display: flex;
-        @extend %elemCentrados;
-        margin: 5px;
-        font-family: titulos;
-      }
+      background-color: $color-blackC;
+      width: 20rem;
+      height: 55px;
+      border-radius: 15px;
+      display: flex;
+      @extend %elemCentrados;
+      margin: 5px;
+      font-family: titulos;
+    }
   }
 }
 
@@ -129,7 +128,7 @@ main {
           @extend %transImgCorta;
         }
       }
-      p{
+      p {
         color: $color-grisC;
         margin-top: 5px;
       }
@@ -144,20 +143,20 @@ main {
   }
 }
 
- /*Enlace Absoluto*/
-.enlaceAbs{
+/*Enlace Absoluto*/
+.enlaceAbs {
   text-align: center;
   margin: 0px;
   padding: 0;
   width: 100%;
-  .ButtEnlaceAbs{
+  .ButtEnlaceAbs {
     border-radius: 5px;
     height: 30px;
     width: 100px;
     margin-bottom: 5px;
     background-color: $color-grisC;
   }
-  a{
+  a {
     text-decoration: none;
     color: #0a100d;
   }
@@ -169,16 +168,15 @@ main {
   position: fixed;
   top: 400px;
   left: 90%;
-  img{
+  img {
     width: 30px;
   }
-  
 }
 
 /*Footer*/
 
 .footer {
-  @include flexible (flex, column);
+  @include flexible(flex, column);
   align-items: center;
   .txtAnunRedes {
     color: $color-grisC;
@@ -191,7 +189,7 @@ main {
     li {
       display: inline-block;
       padding: 2px;
-      img{
+      img {
         width: 2.2rem;
       }
     }

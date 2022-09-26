@@ -1,14 +1,11 @@
 /*formulario*/
 .breadcrumb {
-  li
-  a {
+  li a {
     text-decoration: none;
     color: #d8a60f;
     margin-left: 5px;
   }
 }
-
-
 
 .mainCont {
   @include flexible(flex, column);

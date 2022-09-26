@@ -16,7 +16,7 @@
 
   .anuncios {
     .texto {
-      h3{
+      h3 {
         text-align: center;
       }
     }
@@ -162,7 +162,6 @@
     left: 0;
   }
 
-
   .mainTalles {
     flex-direction: column-reverse;
     &__contTalles {
@@ -183,7 +182,6 @@
 }
 
 @media (min-width: 1293px) {
-
   .header {
     .nav-link {
       font-size: 25px;
@@ -199,8 +197,6 @@
       }
     }
   }
-
-  
 
   /*talles*/
   .mainTalles {
@@ -238,13 +234,12 @@
             @extend %transImgCorta;
           }
         }
-        p{
+        p {
           font-size: 20px;
         }
-        h5{
+        h5 {
           font-size: 20px;
         }
-    
       }
     }
   }
