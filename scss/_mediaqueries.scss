@@ -12,6 +12,16 @@
     padding: 20px;
   }
 
+  /*anuncios*/
+
+  .anuncios {
+    .texto {
+      h3{
+        text-align: center;
+      }
+    }
+  }
+
   /*Portadas*/
   .contenedorPortadas .contTxt .titulo {
     height: 60px;
@@ -51,8 +61,8 @@
   .header {
     position: sticky;
     top: 0;
-    z-index: 1;
-    a {
+    z-index: 3;
+    .nav-link {
       font-size: 20px;
       margin-left: 60px;
       .logo {
@@ -175,7 +185,7 @@
 @media (min-width: 1293px) {
 
   .header {
-    a {
+    .nav-link {
       font-size: 25px;
       margin-left: 80px;
     }

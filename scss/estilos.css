@@ -319,6 +319,10 @@ main .carousel-item {
     font-size: 20px;
     padding: 20px;
   }
+  /*anuncios*/
+  .anuncios .texto h3 {
+    text-align: center;
+  }
   /*Portadas*/
   .contenedorPortadas .contTxt .titulo {
     height: 60px;
@@ -358,13 +362,13 @@ main .carousel-item {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
   }
-  .header a {
+  .header .nav-link {
     font-size: 20px;
     margin-left: 60px;
   }
-  .header a .logo {
+  .header .nav-link .logo {
     height: 10rem;
   }
   .header ul li:hover {
@@ -462,7 +466,7 @@ main .carousel-item {
   }
 }
 @media (min-width: 1293px) {
-  .header a {
+  .header .nav-link {
     font-size: 25px;
     margin-left: 80px;
   }
