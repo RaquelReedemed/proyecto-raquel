@@ -48,7 +48,6 @@ main {
 
 .anuncios {
   font-size: 15px;
-  background-color: $color-grisC;
   margin-top: 2px;
   @include flexible(flex, column-reverse);
 

@@ -85,7 +85,6 @@ main .carousel-item {
 
 .anuncios {
   font-size: 15px;
-  background-color: #D6D5C9;
   margin-top: 2px;
   display: flex;
   flex-direction: column-reverse;
